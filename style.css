@@ -49,7 +49,7 @@ header{
 
 .main{
     height: calc(100vh - 5em);
-    background: url('/assets/img1.jpg');
+    background: url('./assets/img1.jpg');
     background-size: cover; 
 }    
 .services{
