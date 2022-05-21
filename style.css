@@ -23,7 +23,7 @@ body {
 header {
     font-size: 1rem;
     width: 100%;
-    height: 5em;
+    height: 80px;
     /* position: fixed; */
     position: sticky;
     top: 0;
@@ -32,7 +32,7 @@ header {
 }
 
 .nav {
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -50,13 +50,17 @@ header {
     align-items: center;
     gap: .3em;
 }
+.nav__logo span{
+    font-weight: 400;
+    color: var(--secundary);
+}
 .nav__logo img {
     height: 2.2em;
 }
 
 .nav__categorias {
     display: flex;
-    gap: 1.5em;
+    gap: 1.8em;
     list-style: none;
 }
 
@@ -71,12 +75,11 @@ header {
     font-size: 1rem;
     width: 100%;
     position: relative;
-    height: calc(100vh - 5em);
-    /* height: 100vh; */
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
-    align-items: center;
     background: url('./assets/img2.jpg');
+    background-position: center;
     background-size: cover;
 }
 
@@ -87,38 +90,99 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, .35);
-    background-blend-mode: multiply;
+    background-color: rgba(255, 255, 255, .3);
+    background-blend-mode:screen;
 }
 
 .main__information {
+    margin-top: 18vh;
     position: relative;
     text-align: center;
-    min-height: 40vh;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    align-items: center;
+    gap: .4em;
 }
-
 .main__information h1 {
-    font-size: 4.8em;
+    font-size: 5em;
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--principal);
-
 }
-
-.main__information h2 {
-    font-size: 2.4em;
+.main__information h1 span{
+    font-weight: 300;
     letter-spacing: 2px;
     color: var(--secundary);
 }
-
-
-.services {
-    min-height: 100vh;
+.main__information h2 {
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    color: var(--secundary);
+}
+.main__information p {
+    width: 400px;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: var(--secundary);
 }
 
+.services {
+    font-size: 1rem;
+    min-height: calc(100vh - 80px);
+}
+.services__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.services__container h2 {
+    font-size: 2.6em;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-left: 1em;
+    color: var(--principal);
+}
+.services__container__service {
+    width: 100%;
+    height: 300px;
+    background-color: var(--principal);
+    display: flex;
+    justify-content: space-between;
+}
+.services__container__service img{
+    height: 300px;
+    width: 600px;
+}
+.services__container__service__information{
+    width: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+.services__container__service__information h3{
+    font-size: 1.8em;
+    font-weight: 500;
+    
+}
+.services__container__service__information ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+.services__container__service__information ul li{
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
 footer {
     min-height: 300px;
     background-color: var(--principal);
