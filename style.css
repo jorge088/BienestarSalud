@@ -50,10 +50,12 @@ header {
     align-items: center;
     gap: .3em;
 }
-.nav__logo span{
+
+.nav__logo span {
     font-weight: 400;
     color: var(--secundary);
 }
+
 .nav__logo img {
     height: 2.2em;
 }
@@ -91,7 +93,7 @@ header {
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, .3);
-    background-blend-mode:screen;
+    background-blend-mode: screen;
 }
 
 .main__information {
@@ -103,22 +105,26 @@ header {
     align-items: center;
     gap: .4em;
 }
+
 .main__information h1 {
     font-size: 5em;
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--principal);
 }
-.main__information h1 span{
+
+.main__information h1 span {
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--secundary);
 }
+
 .main__information h2 {
     font-size: 2.2em;
     letter-spacing: 2px;
     color: var(--secundary);
 }
+
 .main__information p {
     width: 400px;
     font-size: 1.7em;
@@ -130,6 +136,7 @@ header {
     font-size: 1rem;
     min-height: calc(100vh - 80px);
 }
+
 .services__container {
     max-width: 1000px;
     margin: 0 auto;
@@ -140,6 +147,7 @@ header {
     align-items: center;
     gap: 2em;
 }
+
 .services__container h2 {
     font-size: 2.6em;
     font-weight: 500;
@@ -147,6 +155,7 @@ header {
     margin-left: 1em;
     color: var(--principal);
 }
+
 .services__container__service {
     width: 100%;
     height: 300px;
@@ -154,11 +163,13 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.services__container__service img{
+
+.services__container__service img {
     height: 100%;
     width: 600px;
 }
-.services__container__service__information{
+
+.services__container__service__information {
     width: 400px;
     color: #fff;
     display: flex;
@@ -167,12 +178,14 @@ header {
     justify-content: center;
     gap: .6em;
 }
-.services__container__service__information h3{
+
+.services__container__service__information h3 {
     font-size: 1.8em;
     font-weight: 600;
-    
+
 }
-.services__container__service__information ul{
+
+.services__container__service__information ul {
     margin: 0 2.5em;
     list-style: none;
     align-self: flex-start;
@@ -180,12 +193,45 @@ header {
     flex-direction: column;
     gap: .3em;
 }
-.services__container__service__information ul li{
+
+.services__container__service__information ul li {
     font-size: 1.3em;
     font-weight: 500;
-    text-align:left;
+    text-align: left;
 }
-footer {
-    min-height: 300px;
+
+.footer {
+    font-size: 1rem;
+    min-height: 240px;
+    width: 100%;
     background-color: var(--principal);
+}
+
+.footer__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__container__item {
+    width: 300px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+}
+.footer__container__item h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1.1em;
+}
+.footer__container__item p{
+    font-size: 1.15em;
+    font-weight: 300;
+}
+.footer__container__item.contact p{
+    font-size: 1.4em;
 }
