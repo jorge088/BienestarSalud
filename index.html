@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- letra cards ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <title>Bienestar Salud</title>
@@ -22,8 +31,8 @@
             </a>
             <ul class="nav__categorias">
                 <li><a href="#services" id="navServices">Servicios</a></li>
-                <li><a href="#contact" id="navContact">Contacto</a></li>
                 <li><a href="#aboutUs" id="navAboutUs">Nosotros</a></li>
+                <li><a href="#contact" id="navContact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +52,7 @@
         <div class="services__container">
             <h2>Nuestros Servicios</h2>
             <div class="services__container__service">
-                <img src="./assets/img3.jpg" alt="imgsdafas">
+                <img src="./assets/mainBackground.jpg" alt="imgsdafas">
                 <div class="services__container__service__information">
                     <h3>KINESIOLOGÍA</h3>
                     <ul>
@@ -53,7 +62,7 @@
                 </div>
             </div>
             <div class="services__container__service">
-                <img src="./assets/img3.jpg" alt="imgsdafas">
+                <img src="./assets/mainBackground.jpg" alt="imgsdafas">
                 <div class="services__container__service__information">
                     <h3>FISIOTERAPIA</h3>
                     <ul>
@@ -68,6 +77,182 @@
             </div>
         </div>
     </section>
+    <!-- carrousel -->
+    <section id="aboutUs" >
+        <h2 data-aos="fade-right" data-aos-duration="2000" class="titulo_carrousel">Somos Bienestar <span class="salud">
+                Salud </span></h2>
+        <h3 data-aos="fade-left" data-aos-duration="2000" class="titulo_carrousel_subtitulo">Ofrecemos un servicio
+            distinguido en Fisioterapia
+            y Kinesiología.</h3>
+
+        <div class="container_carrousel ">
+            <div class="row col-12">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="w-100">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-8 col-md-4 order-md-1">
+                                        <img class="img-fluid mb-5 mb-md-0 rounded" src="./assets/carrousel1.jpeg"
+                                            alt="imagen ">
+                                    </div>
+                                    <div class="col-md-5 order-md-0">
+                                        <figure class="mx-auto mb-0" style="max-width: 500px;">
+                                            <blockquote class="blockquote mb-0">
+                                                <p class="carrousel_texto "> Nos desempeñamos bajo las Normativas
+                                                    exigidas por la superintendencia de salud de la Nación, en Bienestar
+                                                    <span class="salud"> Salud </span> tenemos como objetivo primordial
+                                                    brindar cobertura médico-asistencial de excelencia...</p>
+                                            </blockquote>
+
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="w-100">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-8 col-md-4 order-md-1">
+                                        <img class="img-fluid mb-5 mb-md-0 rounded" src="./assets/carrusel2.jpeg"
+                                            alt="imagen ">
+                                    </div>
+                                    <div class="col-md-5 order-md-0">
+                                        <figure class="mx-auto mb-0" style="max-width: 500px;">
+                                            <blockquote class="blockquote mb-0">
+                                                <p class="carrousel_texto ">...Nuestra trayectoria y cumplimiento de
+                                                    compromisos, nos permiten ofrecer un servicio de medicina integral
+                                                    confiable para todas aquellas personas que lo necesiten...</p>
+                                            </blockquote>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="w-100">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-8 col-md-4 order-md-1">
+                                        <img class="img-fluid mb-5 mb-md-0 rounded" src="./assets/carrusel3.jpeg"
+                                            alt="imagen ">
+                                    </div>
+                                    <div class="col-md-5 order-md-0">
+                                        <figure class="mx-auto mb-0" style="max-width: 500px;">
+                                            <blockquote class="blockquote mb-0">
+                                                <p class="carrousel_texto">...Centralizamos nuestra atención en toda la
+                                                    provincia de Tucumán y ciudad de Córdoba, contando con
+                                                    infraestructura edilicia, equipamiento y profesionales altamente
+                                                    capacitados, con el único propósito de otorgar tranquilidad mediante
+                                                    una eficiente organización de servicios de salud.</p>
+                                            </blockquote>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="w-100">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-8 col-md-4 order-md-1">
+                                        <img class="img-fluid mb-5 mb-md-0 rounded" src="." alt="imagen4">
+                                    </div>
+                                    <div class="col-md-5 order-md-0">
+                                        <figure class="mx-auto mb-0" style="max-width: 500px;">
+                                            <blockquote class="blockquote mb-0">
+                                                <p class="carrousel_texto ">dejo armado por si queremos agregar </p>
+                                            </blockquote>
+
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="w-100">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-8 col-md-4 order-md-1">
+                                        <img class="img-fluid mb-5 mb-md-0 rounded" src="" alt="imagen5">
+                                    </div>
+                                    <div class="col-md-5 order-md-0">
+                                        <figure class="mx-auto mb-0" style="max-width: 500px;">
+                                            <blockquote class="blockquote mb-0">
+                                                <p class="carrousel_texto ">dejo armado por si queremos agregar mas
+                                                    imagenes</p>
+                                            </blockquote>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3 class="container_cards_titulo2">CONOCÉNOS</h3>
+        <div class="container_cards2">
+            <div class="container_cards_card row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div data-aos="flip-left" data-aos-duration="2000" class="card2 h-100">
+                        <img src="./assets/card1.jpeg" class="card-img-top" alt="imagen Bienestar salud">
+                        <div class="card-body">
+                            <h5 class="card-title2">KINESIOLOGÍA TRAUMATOLÓGICA </h5>
+                            <p class="card-text2">
+                                Kinesiología respiratoria, pediátrica y neonatal.
+                                Contamos con materiales para el control de los parámetros vitales pre y post sesión de
+                                KTR, sistema de aspiración abierta para patologías más complejas, gabinetes
+                                individuales, aparatología de última generación y un gimnasio con variedad de elementos.
+                                Las maniobras kinésicas convencionales se complementan con la posibilidad de tapping,
+                                liberación miofacial, esferodinamia, punción seca, acupuntura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="card2 h-100">
+                        <img src="./assets/card2.jpeg" class="card-img-top" alt="......ponemos imagen???">
+                        <div class="card-body">
+                            <h5 class="card-title2">REHABILITACIÓN PERSONALIZADA </h5>
+                            <p class="card-text2">Nuestro establecimiento tiene la capacidad de recepcionar pacientes
+                                con enfermedades neurológicas centrales y periféricas (ACV, PARKINSON, ALZEHIMER, PFP,
+                                ELA, ESQUELOROSIS MÚLTIPLE, LESIONES MEDULARES,SINDRÓMES VESTIBUALES ETC). Se brinda una
+                                atención personalizada de 45 minutos, con trabajo cuerpo a cuerpo, kinesiólogo –
+                                paciente. Las instalaciones brindan la posibilidad de recepcionar pacientes en camilla
+                                y/o silla de ruedas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div data-aos="flip-right" data-aos-duration="2000" class="card2 h-100">
+                        <img src="./assets/card3.jpeg" class="card-img-top" alt=".....ponemos imagen????">
+                        <div class="card-body">
+                            <h5 class="card-title2">REHABILITACIÓN NEUROKINÉSICA</h5>
+                            <p class="card-text2">El trabajo neurokinésico se realiza sobre la base de CONCEPTO BOBATH,
+                                contamos con los aditamentos necesarios para beneficiar la progresión ascendente del
+                                paciente. Cada una de las terapias según el requerimiento de la patología del paciente,
+                                quedan registradas en una ficha evaluativa donde se plasman los parámetros iniciales del
+                                paciente. Finalizadas las sesiones indicadas por el médico tratante se realiza una
+                                reevaluación para dejar constancia de la evolución del paciente en el proceso de su
+                                tratamiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="contact" class="contact">
         <div class="contact__container">
@@ -115,10 +300,6 @@
         </div>
     </section>
 
-    <section id="aboutUs" class="aboutUs">
-        NOSOTROS
-    </section>
-
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__container__item">
@@ -139,5 +320,16 @@
     </footer>
 </body>
 <script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+<!-- animaciones -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
