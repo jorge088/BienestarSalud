@@ -17,10 +17,10 @@ html {
 body {
     font-size: 16px;
     background-color: var(--background);
+    overflow-x: hidden;
 }
 
 /* HEADER SECTION */
-
 header {
     font-size: 1rem;
     width: 100%;
@@ -30,16 +30,15 @@ header {
     z-index: 100;
     background-color: var(--principal);
 }
-
 .nav {
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .nav__logo {
     color: #fff;
     font-size: 1.6em;
@@ -49,33 +48,101 @@ header {
     align-items: center;
     gap: .3em;
 }
-.nav__logo:hover{
+.nav__logo:hover {
     color: #fff;
 }
-
 .nav__logo span {
     color: var(--secundary);
     font-weight: 400;
 }
-
 .nav__logo img {
     height: 2.2em;
 }
-
 .nav__categorias {
     display: flex;
     margin: auto 0;
-    gap: 2em;
+    padding: 0;
     list-style: none;
 }
-
 .nav__categorias li a {
     color: #fff;
     font-size: 1.25em;
+    padding: .4em 1em;
     text-decoration: none;
+    border-radius: 5px;
+    transition: .4s ease all;
 }
 .nav__categorias li a:hover {
-    color: var(--secundary);
+    background-color: #23b3a2;
+}
+.nav__responsiveButton {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+    padding: 0 .4em;
+    font-size: 1.8em;
+}
+.nav__responsiveButton:focus {
+    border: 2px solid #fff;
+}
+/* responsive */
+@media only screen and (max-width:575px) {
+    header {
+        font-size: .8rem;
+    }
+    .nav__categorias {
+        position: absolute;
+        right: -100vw;
+        top: 80px;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--principal);
+        transition: .45s ease-in all;
+    }
+    .showNav{
+        right: -10vw;
+    }
+    .nav__categorias li a{
+        display: block;
+        width: 70vw;
+        padding: .7em 0;
+        text-align: center;
+        border-top: 1px solid #fff;
+    }
+    .nav__responsiveButton {
+        display: block;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+    header {
+        font-size: .9rem;
+    }
+    .nav__categorias {
+        position: absolute;
+        right: -100vw;
+        top: 80px;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--principal);
+        transition: .45s ease-in all;
+    }
+    .showNav{
+        right: -10vw;
+    }
+    .nav__categorias li a{
+        display: block;
+        width: 70vw;
+        padding: .7em 0;
+        text-align: center;
+        border-top: 1px solid #fff;
+    }
+    .nav__responsiveButton {
+        display: block;
+    }
 }
 
 /* MAIN SECTION */
@@ -91,8 +158,9 @@ header {
     background-position: center;
     background-size: cover;
 }
+
 /* Para que el Background-blend-mode no afecte al texto en Main */
-.main::before { 
+.main::before {
     content: '';
     position: absolute;
     top: 0;
@@ -218,17 +286,17 @@ header {
     letter-spacing: 0.1em;
     text-align: center;
     padding: 1.2em 0 0.5em;
-    
+
 }
 
-.salud{
+.salud {
     font-weight: 400;
     letter-spacing: 2px;
     color: var(--secundary);
     text-transform: uppercase;
 }
 
-.titulo_carrousel_subtitulo{
+.titulo_carrousel_subtitulo {
     font-size: 2em;
     font-weight: 500;
     color: var(--principal);
@@ -238,18 +306,18 @@ header {
     padding-bottom: 1.5em;
 }
 
-.container_carrousel{
+.container_carrousel {
     background-color: var(--principal);
     display: flex;
     align-items: center;
 }
 
-.carrousel_texto{
+.carrousel_texto {
     font-family: 'Roboto Flex', sans-serif;
     color: #fff;
     font-size: 1.2em;
-    letter-spacing: 0.1em; 
-    padding: 4em 0 ;   
+    letter-spacing: 0.1em;
+    padding: 4em 0;
 }
 
 
@@ -259,7 +327,7 @@ header {
 /* CARDS INFORMATIVAS ----------*/
 
 
-.container_cards_titulo2{
+.container_cards_titulo2 {
     font-size: 2.4em;
     font-weight: 500;
     color: var(--principal);
@@ -269,7 +337,7 @@ header {
     padding: 1.5em 0 0.5em;
 }
 
-.container_cards2{
+.container_cards2 {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -279,14 +347,15 @@ header {
     padding-top: 1em;
 }
 
-.card2{
+.card2 {
     padding: 0 0.5em;
 }
-.card2 img{
+
+.card2 img {
     border-radius: 50px;
 }
 
-.card-title2{
+.card-title2 {
     font-size: 1.5em;
     font-weight: 500;
     color: var(--secundary);
@@ -294,10 +363,10 @@ header {
     letter-spacing: 0.1em;
     text-align: center;
     padding: 1em 0 0.5em;
- 
+
 }
 
-.card-text2{
+.card-text2 {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1em;
     font-weight: 500;
@@ -311,7 +380,7 @@ header {
 
 /* CONTACT SECTION */
 
-.contact{
+.contact {
     font-size: 1rem;
     min-height: calc(100vh - 80px);
     margin-top: 2em;
@@ -319,7 +388,7 @@ header {
     align-items: center;
 }
 
-.contact__container{
+.contact__container {
     width: 80%;
     margin: 0 auto;
     padding: .5em;
@@ -328,19 +397,19 @@ header {
     align-items: center;
 }
 
-.contact__container__information{
+.contact__container__information {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
 }
 
-.contact__container__information__item{
+.contact__container__information__item {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-.contact__container__information__item span{
+.contact__container__information__item span {
     font-size: 1.8em;
     width: 35px;
     height: 35px;
@@ -349,20 +418,20 @@ header {
     background-color: orange;
 }
 
-.contact__container__information__item__text h4{
+.contact__container__information__item__text h4 {
     font-size: 1.1em;
     font-weight: 600;
     color: var(--secundary);
 }
 
-.contact__container__information__item__text p{
+.contact__container__information__item__text p {
     width: 280px;
     font-size: 1.2em;
     font-weight: 500;
     color: var(--principal);
 }
 
-.contact__container__map iframe{
+.contact__container__map iframe {
     width: 600px;
     height: 380px;
     border: none;
@@ -370,7 +439,7 @@ header {
 }
 
 /* ABOUT US SECTION */
-.aboutUs{
+.aboutUs {
     height: calc(100vh - 80px);
 }
 
@@ -399,17 +468,17 @@ header {
     gap: .3em;
 }
 
-.footer__container__item h3{
+.footer__container__item h3 {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 1.1em;
 }
 
-.footer__container__item p{
+.footer__container__item p {
     font-size: 1.15em;
     font-weight: 300;
 }
 
-.footer__container__item.contactItem p{
+.footer__container__item.contactItem p {
     font-size: 1.4em;
 }
