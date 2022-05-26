@@ -17,7 +17,7 @@ html {
 body {
     font-size: 16px;
     background-color: var(--background);
-    overflow-x: hidden;
+
 }
 
 /* HEADER SECTION */
@@ -106,17 +106,18 @@ header {
 
     .nav__categorias {
         position: absolute;
-        right: -100vw;
+        opacity: 0;
+        right: -10vw;
         top: 80px;
         width: 70vw;
         flex-direction: column;
         align-items: center;
         background-color: var(--principal);
-        transition: .45s ease-in all;
+        transition: .2s ease-in all;
     }
 
     .showNav {
-        right: -10vw;
+        opacity: 1;
     }
 
     .nav__categorias li a {
@@ -139,17 +140,18 @@ header {
 
     .nav__categorias {
         position: absolute;
-        right: -100vw;
+        opacity: 0;
+        right: -10vw;
         top: 80px;
         width: 70vw;
         flex-direction: column;
         align-items: center;
         background-color: var(--principal);
-        transition: .45s ease-in all;
+        transition: .2s ease-in all;
     }
 
     .showNav {
-        right: -10vw;
+        opacity: 1;
     }
 
     .nav__categorias li a {
@@ -262,7 +264,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
 }
 
 .services__container h2 {
@@ -288,6 +290,7 @@ header {
 
 .services__container__service__information {
     width: 400px;
+    padding: 1.5em 0;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -314,6 +317,100 @@ header {
     font-size: 1.1em;
     font-weight: 500;
     text-align: left;
+}
+
+@media only screen and (max-width:575px) {
+    .services {
+        font-size: .85rem;
+    }
+
+    .services__container {
+        max-width: 90%;
+
+    }
+
+    .services__container__service {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services__container__service img {
+        height: 230px;
+        width: 100%;
+    }
+
+    .services__container__service__information {
+        width: auto;
+        min-height: 200px;
+    }
+
+    .services__container__service__information ul {
+        margin: 0 .7em;
+
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .services {
+        font-size: .9rem;
+    }
+
+    .services__container {
+        max-width: 80%;
+
+    }
+
+    .services__container__service {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services__container__service img {
+        height: 260px;
+        width: 100%;
+    }
+
+    .services__container__service__information {
+        width: auto;
+        min-height: 200px;
+    }
+
+    .services__container__service__information ul {
+        margin: 0 1.5em;
+
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .services {
+        font-size: 1rem;
+    }
+
+    .services__container {
+        max-width: 70%;
+
+    }
+
+    .services__container__service {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services__container__service img {
+        height: 260px;
+        width: 100%;
+    }
+
+    .services__container__service__information {
+        width: auto;
+        min-height: 200px;
+    }
+
 }
 
 /* CARRUSEL */
