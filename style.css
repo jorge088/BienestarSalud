@@ -23,9 +23,9 @@ body {
 /* HEADER SECTION */
 header {
     font-size: 1rem;
-    width: 100%;
+    width: 100vw;
     height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     background-color: var(--principal);
@@ -172,6 +172,7 @@ header {
 .main {
     font-size: 1rem;
     width: 100vw;
+    margin-top: 80px;
     height: calc(100vh - 80px);
     position: relative;
     display: flex;
@@ -421,6 +422,12 @@ header {
 
 /* CARRUSEL */
 
+/* Esta clase es para evitar el overflow horizontal provocado por las animaciones de los titulos */
+.carrousel__titles__container {
+    overflow: hidden;
+    padding: 0 .5em;
+}
+
 .titulo_carrousel {
     font-size: 2.4em;
     font-weight: 500;
@@ -453,8 +460,12 @@ header {
     background-color: var(--principal);
     display: flex;
     align-items: center;
-    /* provisorio */
-    /* min-height: 550px;   */
+}
+
+/* Esta clase es porque ROW tiene unos margenes predefinidos que no lo dejaba centrado */
+.container_carrousel_row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .carrousel_texto {
@@ -465,15 +476,21 @@ header {
     padding: 4em 0;
 }
 
+/* Esta clase es para evitar el cambio de tamaño en la pag al cambiar de carrusel */
+.carousel-item-container {
+    min-height: 460px;
+}
 
 @media only screen and (min-width:768px) and (max-width:992px) {
     .titulo_carrousel {
         font-size: 2em;
         padding-top: 0.5em;
     }
+
     .titulo_carrousel_subtitulo {
         font-size: 1.5em;
     }
+
     .carrousel_texto {
         font-size: 1em;
     }
@@ -483,24 +500,24 @@ header {
     .titulo_carrousel {
         font-size: 2em;
     }
-    
+
     .titulo_carrousel_subtitulo {
         font-size: 1.5em;
     }
 
-    .container_carrousel img{
+    .container_carrousel img {
         margin-top: 2.5em;
     }
-    
+
     .carrousel_texto {
         font-family: 'Roboto Flex', sans-serif;
         color: #fff;
         font-size: 0.8em;
         letter-spacing: 0.1em;
         padding: 2em;
-      
 
-}
+
+    }
 }
 
 /* CARDS INFORMATIVAS ----------*/
@@ -571,8 +588,9 @@ header {
     }
 
 }
+
 @media only screen and (max-width:751px) {
-    .container_cards_titulo2{
+    .container_cards_titulo2 {
         font-size: 2em;
         padding-bottom: 0;
     }
@@ -591,6 +609,7 @@ header {
     }
 
 }
+
 /* CONTACT SECTION */
 
 .contact {
@@ -656,7 +675,7 @@ header {
     margin: 0;
 }
 
-.contact__container__information__item__text a{
+.contact__container__information__item__text a {
     text-decoration: none;
     width: 280px;
     font-size: 1.2em;
@@ -821,6 +840,11 @@ header {
 
 .footer__container__item.contactItem p {
     font-size: 1.4em;
+}
+
+.footer__container__item.contactItem p a {
+    text-decoration: none;
+    color: #fff;
 }
 
 @media only screen and (max-width:575px) {

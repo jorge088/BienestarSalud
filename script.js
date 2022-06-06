@@ -13,18 +13,18 @@ const responsiveBtnNav = document.querySelector('.nav__responsiveButton');
 navServices.addEventListener('click',(e)=>{
     e.preventDefault();
     if (navLinks.classList.contains('showNav')) navLinks.classList.toggle('showNav');
-    scrollTo(0,servicesSection.offsetTop - 80);
+    scrollTo(0,servicesSection.offsetTop);
 });
 
 navAboutUs.addEventListener('click',(e)=>{
     e.preventDefault();
     if (navLinks.classList.contains('showNav')) navLinks.classList.toggle('showNav');
-    scrollTo(0,aboutUsSection.offsetTop - 80);
+    scrollTo(0,aboutUsSection.offsetTop);
 });
 navContact.addEventListener('click',(e)=>{
     e.preventDefault();
     if (navLinks.classList.contains('showNav')) navLinks.classList.toggle('showNav');
-    scrollTo(0,contactSection.offsetTop - 80);
+    scrollTo(0,contactSection.offsetTop);
 });
 
 responsiveBtnNav.addEventListener('click', ()=>{    
