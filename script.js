@@ -13,14 +13,13 @@ const responsiveBtnNav = document.querySelector('.nav__responsiveButton');
 const animado=document.querySelectorAll(".animacion");
 window.addEventListener('scroll',function(){
     let scrollTopPos = document.documentElement.scrollTop;
+    console.log(scrollTopPos);
     for(let i=0;i<animado.length;i++){
         let alturaAnimacion = animado[i].offsetTop;
-        if(alturaAnimacion - 450 < scrollTopPos){
+        console.log("ALTURA",alturaAnimacion)
+        if(alturaAnimacion - 420 < scrollTopPos){
             i%2 ==0 ? animado[i].classList.add("mostrarDerecha") 
             : animado[i].classList.add("mostrarIzquierda")
-        }else{
-            animado[i].classList.remove("mostrarIzquierda");
-            animado[i].classList.remove("mostrarDerecha");
         }
     }
 });
