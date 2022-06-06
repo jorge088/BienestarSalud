@@ -454,7 +454,7 @@ header {
     display: flex;
     align-items: center;
     /* provisorio */
-    min-height: 550px;  
+    /* min-height: 550px;   */
 }
 
 .carrousel_texto {
@@ -465,6 +465,43 @@ header {
     padding: 4em 0;
 }
 
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .titulo_carrousel {
+        font-size: 2em;
+        padding-top: 0.5em;
+    }
+    .titulo_carrousel_subtitulo {
+        font-size: 1.5em;
+    }
+    .carrousel_texto {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .titulo_carrousel {
+        font-size: 2em;
+    }
+    
+    .titulo_carrousel_subtitulo {
+        font-size: 1.5em;
+    }
+
+    .container_carrousel img{
+        margin-top: 2.5em;
+    }
+    
+    .carrousel_texto {
+        font-family: 'Roboto Flex', sans-serif;
+        color: #fff;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        padding: 2em;
+      
+
+}
+}
 
 /* CARDS INFORMATIVAS ----------*/
 
@@ -485,6 +522,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2em;
     padding-top: 1em;
 }
@@ -526,13 +564,39 @@ header {
     color: var(--principal);
 }
 
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .container_cards_titulo2 {
+        font-size: 2em;
+        padding-top: 1.5em;
+    }
 
+}
+@media only screen and (max-width:751px) {
+    .container_cards_titulo2{
+        font-size: 2em;
+        padding-bottom: 0;
+    }
 
+    .container_cards_card {
+        padding: 2em;
+    }
+
+    .card2 img {
+        height: 270px;
+        width: 270px;
+    }
+
+    .card-text2 {
+        padding: 1em;
+    }
+
+}
 /* CONTACT SECTION */
 
 .contact {
     font-size: 1rem;
-    min-height: calc(100vh - 80px);
+    /* ojo que en dispositivos pequeños queda mucho espacio entre las cards y la info */
+    /* min-height: calc(100vh - 80px); */
     margin-top: 3em;
     padding: 1em 0;
     display: flex;
@@ -592,6 +656,15 @@ header {
     margin: 0;
 }
 
+.contact__container__information__item__text a{
+    text-decoration: none;
+    width: 280px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--principal);
+    margin: 0;
+}
+
 .contact__container__map {
     width: 600px;
     height: 380px;
@@ -618,7 +691,6 @@ header {
         gap: 2em;
     }
 
-
     .contact__container__information__item span i {
         font-size: 22px;
         width: 40px;
@@ -628,7 +700,7 @@ header {
         margin: auto;
     }
 
-    .contact__container__information__item__text p {
+    .contact__container__information__item__text p a {
         width: 220px;
     }
 
@@ -672,7 +744,7 @@ header {
         margin: auto;
     }
 
-    .contact__container__information__item__text p {
+    .contact__container__information__item__text p a {
         width: 180px;
     }
 
@@ -704,7 +776,7 @@ header {
         margin: auto;
     }
 
-    .contact__container__information__item__text p {
+    .contact__container__information__item__text p a {
         width: 200px;
     }
 }
