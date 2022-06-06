@@ -259,8 +259,8 @@ header {
 .services {
     font-size: 1rem;
     min-height: calc(100vh - 80px);
-    margin-top: 3em;
-    padding: 1em 0;
+    margin-top: 2em;
+    padding: 2em 0;
 }
 
 .services__container {
@@ -320,7 +320,7 @@ header {
 }
 
 .services__container__service__information ul li {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 500;
     text-align: left;
 }
@@ -353,8 +353,7 @@ header {
     }
 
     .services__container__service__information ul {
-        margin: 0 .7em;
-
+        margin: 0 .4em;
     }
 }
 
@@ -425,7 +424,7 @@ header {
 /* Esta clase es para evitar el overflow horizontal provocado por las animaciones de los titulos */
 .carrousel__titles__container {
     overflow: hidden;
-    padding: 0 .5em;
+    padding: 0 .8em;
 }
 
 .titulo_carrousel {
@@ -541,7 +540,7 @@ header {
     align-items: center;
     text-align: center;
     gap: 2em;
-    padding-top: 1em;
+    padding-top: 0em;
 }
 
 .container_cards_card {
@@ -614,10 +613,8 @@ header {
 
 .contact {
     font-size: 1rem;
-    /* ojo que en dispositivos pequeños queda mucho espacio entre las cards y la info */
-    /* min-height: calc(100vh - 80px); */
-    margin-top: 3em;
-    padding: 1em 0;
+    min-height: calc(100vh - 80px);
+    margin-bottom: 3em;
     display: flex;
     align-items: center;
 }
@@ -699,6 +696,8 @@ header {
 @media only screen and (max-width:575px) {
     .contact {
         font-size: .8rem;
+        min-height: auto;
+        margin-top: 0em;
     }
 
     .contact__container {
@@ -734,6 +733,8 @@ header {
 @media only screen and (min-width:576px) and (max-width:768px) {
     .contact {
         font-size: .85rem;
+        min-height: auto;
+        margin-top: 1em;
     }
 
     .contact__container {
@@ -778,6 +779,8 @@ header {
 @media only screen and (min-width:768px) and (max-width:992px) {
     .contact {
         font-size: .85rem;
+        min-height: auto;
+        padding-top: 3em;
     }
 
     .contact__container {
