@@ -10,6 +10,21 @@ const navContact = document.querySelector('#navContact');
 
 const responsiveBtnNav = document.querySelector('.nav__responsiveButton');
 
+const animado=document.querySelectorAll(".animacion");
+window.addEventListener('scroll',function(){
+    let scrollTopPos = document.documentElement.scrollTop;
+    for(let i=0;i<animado.length;i++){
+        let alturaAnimacion = animado[i].offsetTop;
+        if(alturaAnimacion - 450 < scrollTopPos){
+            i%2 ==0 ? animado[i].classList.add("mostrarDerecha") 
+            : animado[i].classList.add("mostrarIzquierda")
+        }else{
+            animado[i].classList.remove("mostrarIzquierda");
+            animado[i].classList.remove("mostrarDerecha");
+        }
+    }
+});
+
 navServices.addEventListener('click',(e)=>{
     e.preventDefault();
     if (navLinks.classList.contains('showNav')) navLinks.classList.toggle('showNav');

@@ -20,6 +20,40 @@ body {
     position: relative;
 }
 
+/* ANIMACIONES */
+
+.animacion {
+    opacity: 0;
+    transition: 1.8s linear ;
+}
+.mostrarDerecha {
+    animation: mostrarDerecha 1.5s;
+    opacity: 1;
+}
+.mostrarIzquierda {
+    animation: mostrarIzquierda 1.5s;
+    opacity: 1;
+}
+@keyframes mostrarDerecha {
+    0% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes mostrarIzquierda {
+    0% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* HEADER SECTION */
 header {
     font-size: 1rem;
@@ -261,6 +295,7 @@ header {
     min-height: calc(100vh - 80px);
     margin-top: 2em;
     padding: 2em 0;
+    overflow: hidden;
 }
 
 .services__container {
@@ -324,6 +359,7 @@ header {
     font-weight: 500;
     text-align: left;
 }
+
 
 @media only screen and (max-width:575px) {
     .services {
@@ -612,6 +648,7 @@ header {
 /* CONTACT SECTION */
 
 .contact {
+    width: 100vw;
     font-size: 1rem;
     min-height: calc(100vh - 80px);
     margin-bottom: 3em;
@@ -701,7 +738,7 @@ header {
     }
 
     .contact__container {
-        width: 85%;
+        width: 80vw;
         padding: .5em 0;
         flex-direction: column;
         justify-content: flex-start;
@@ -718,8 +755,8 @@ header {
         margin: auto;
     }
 
-    .contact__container__information__item__text p a {
-        width: 220px;
+    .contact__container__information__item__text p  {
+        width: 200px;
     }
 
     .contact__container__map {
