@@ -216,6 +216,7 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: url('./assets/mainBackground.jpg');
     background-position: center;
     background-size: cover;
@@ -235,7 +236,7 @@ header {
 
 .main__information {
     width: 95%;
-    margin-top: 18vh;
+    margin-top: -10vh;
     position: relative;
     text-align: center;
     display: flex;
@@ -277,7 +278,7 @@ header {
     }
 
     .main__information {
-        margin-top: 16vh;
+        margin-top: -2vh;
     }
 
     .main__information p {
@@ -290,9 +291,6 @@ header {
         font-size: .85rem;
     }
 
-    .main__information {
-        margin-top: 16vh;
-    }
 }
 
 /* SERVICES SECTION */
