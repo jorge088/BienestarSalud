@@ -326,11 +326,12 @@ header {
     border-radius: 12px;
     justify-content: space-between;
     box-shadow: 0 6px 10px -1px rgba(55, 35, 106,.4);
+    overflow: hidden;
 }
 
 .services__container__service__img {
     height: 100%;
-    width: 600px;
+    width: 500px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -344,14 +345,14 @@ header {
 }
 
 .services__container__service__information {
-    width: 400px;
-    padding: 1.5em 0;
+    width: 500px;
+    padding: 2em 0;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: .6em;
+    gap: .5em;
 }
 
 .services__container__service__information h3 {
@@ -360,17 +361,16 @@ header {
 }
 
 .services__container__service__information ul {
-    margin: 0 2.5em;
+    margin: 0 1.8em;
     list-style: none;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
-    gap: .3em;
+    gap: .2em;
 }
 
 .services__container__service__information ul li {
     font-size: 1.2em;
-    /* font-size: 1.2em; */
     font-weight: 500;
     text-align: left;
 }
