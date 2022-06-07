@@ -277,10 +277,6 @@ header {
         font-size: .75rem;
     }
 
-    .main__information {
-        margin-top: -2vh;
-    }
-
     .main__information p {
         width: 250px;
     }
