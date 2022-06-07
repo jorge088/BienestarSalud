@@ -46,7 +46,7 @@ body {
 
 @keyframes mostrarIzquierda {
     0% {
-        transform: translateX(150px);
+        transform: translateX(300px);
     }
 
     100% {
@@ -301,7 +301,7 @@ header {
     min-height: calc(100vh - 80px);
     margin-top: 2em;
     padding: 2em 0;
-    overflow: 1hidden;
+    overflow: hidden;
 }
 
 .services__container {
@@ -312,6 +312,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 3.5em;
+    overflow: hidden;
 }
 
 .services__container h2 {
