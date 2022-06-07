@@ -28,10 +28,11 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="nav__logo" href="#">
+            <a class="nav__logo" id="navLogo" href="#">
                 <img src="./assets/logo.png" alt="Bienestar Salud logo"> Bienestar <span>Salud</span>
             </a>
             <ul class="nav__categorias">
+                <li><a href="#main" id="navHome">Inicio</a></li>
                 <li><a href="#services" id="navServices">Servicios</a></li>
                 <li><a href="#aboutUs" id="navAboutUs">Nosotros</a></li>
                 <li><a href="#contact" id="navContact">Contacto</a></li>
@@ -40,7 +41,7 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
         <div class="main__information">
 
             <h2>KINESIOLOGÍA</h2>
@@ -132,18 +133,18 @@
         </div>
     </section>
 
-    <section data-aos="zoom-in" data-aos-duration="2000" id="aboutUs">
+    <!-- <div data-aos="zoom-in" id='aboutUs' data-aos-duration="2000" >
         <div class="banner">
             <p>En BIENESTAR <span class="salud">SALUD</span> contamos con equipamiento de última generación y
                 profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia en pos
                 de garantizarle al paciente una pronta recuperación en un marco de empatía, atención y respeto.-</p>
         </div>
-    </section>
+    </div> -->
 
 
     <!-- carrousel -->
 
-    <section id="aboutUs">
+    <section id="aboutUs" class="aboutUs">
         <div class="carrousel__titles__container">
             <h2 data-aos="fade-right" data-aos-duration="2000" class="titulo_carrousel">Somos Bienestar <span
                     class="salud">
@@ -152,7 +153,14 @@
                 distinguido en Fisioterapia
                 y Kinesiología.</h3>
         </div>
-
+        <div data-aos="zoom-in" data-aos-duration="2000" >
+            <div class="banner">
+                <!-- <p>En BIENESTAR <span class="salud">SALUD</span>  -->
+                    Contamos con equipamiento de última generación y
+                    profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia en pos
+                    de garantizarle al paciente una pronta recuperación en un marco de empatía, atención y respeto.-</p>
+            </div>
+        </div>
 
         <div class="container_carrousel ">
             <div class="row col-12 container_carrousel_row">
@@ -174,9 +182,11 @@
                                                 gabinetes
                                                 individuales, aparatología de última generación y un gimnasio con
                                                 variedad de elementos.
-                                                Las maniobras kinésicas convencionales se complementan con la
+
+                                                <!-- Las maniobras kinésicas convencionales se complementan con la
                                                 posibilidad de tapping,
-                                                liberación miofacial, esferodinamia, punción seca, acupuntura.
+                                                liberación miofacial, esferodinamia, punción seca, acupuntura. -->
+
                                             </p>
 
 
@@ -197,12 +207,14 @@
                                                 con enfermedades neurológicas centrales y periféricas (ACV, PARKINSON,
                                                 ALZEHIMER, PFP,
                                                 ELA, ESQUELOROSIS MÚLTIPLE, LESIONES MEDULARES,SINDRÓMES VESTIBUALES
-                                                ETC). Se brinda una
+                                                ETC). 
+                                                <!-- Se brinda una
                                                 atención personalizada de 45 minutos, con trabajo cuerpo a cuerpo,
                                                 kinesiólogo –
                                                 paciente. Las instalaciones brindan la posibilidad de recepcionar
                                                 pacientes en camilla
-                                                y/o silla de ruedas.</p>
+                                                y/o silla de ruedas. -->
+                                            </p>
 
                                         </figure>
                                     </div>
@@ -220,7 +232,8 @@
                                                 de CONCEPTO BOBATH,
                                                 contamos con los aditamentos necesarios para beneficiar la progresión
                                                 ascendente del
-                                                paciente. Cada una de las terapias según el requerimiento de la
+                                                paciente. 
+                                                <!-- Cada una de las terapias según el requerimiento de la
                                                 patología del paciente,
                                                 quedan registradas en una ficha evaluativa donde se plasman los
                                                 parámetros iniciales del
@@ -228,7 +241,8 @@
                                                 realiza una
                                                 reevaluación para dejar constancia de la evolución del paciente en el
                                                 proceso de su
-                                                tratamiento.</p>
+                                                tratamiento. -->
+                                            </p>
 
                                         </figure>
                                     </div>
