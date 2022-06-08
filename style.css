@@ -280,11 +280,17 @@ header {
     .main__information p {
         width: 250px;
     }
+    .main__information__location{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:576px) and (max-width:768px) {
     .main {
         font-size: .85rem;
+    }
+    .main__information__location{
+        display: none;
     }
 
 }
