@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content=" En Bienestar Salud ofrecemos un servicio distinguido en Fisioterapia y Kinesiología, contamos con equipamiento de última generación y profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia.">
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <!-- animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -31,11 +28,10 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="nav__logo" id="navLogo" href="#">
+            <a class="nav__logo" href="#">
                 <img src="./assets/logo.png" alt="Bienestar Salud logo"> Bienestar <span>Salud</span>
             </a>
             <ul class="nav__categorias">
-                <li><a href="#main" id="navHome">Inicio</a></li>
                 <li><a href="#services" id="navServices">Servicios</a></li>
                 <li><a href="#aboutUs" id="navAboutUs">Nosotros</a></li>
                 <li><a href="#contact" id="navContact">Contacto</a></li>
@@ -44,24 +40,24 @@
         </nav>
     </header>
 
-    <main class="main" id="main">
+    <main class="main">
         <div class="main__information">
 
             <h2>KINESIOLOGÍA</h2>
             <h2>FISIOTERAPIA</h2>
             <h1>BIENESTAR <span>SALUD</span></h1>
-            <p class="main__information__location">SAN MIGUEL DE TUCUMÁN</p>
+            <p>SAN MIGUEL DE TUCUMÁN</p>
         </div>
     </main>
-
+    
     <section id="services" class="services">
         <div class="services__container">
             <h2>Nuestros Servicios</h2>
             <div class="services__container__service animacion">
                 <div class="services__container__service__img">
-                    <img src="./assets/kinesiologia.jpeg" alt="Servicio de kinesiologia">
+                    <img src="./assets/kinesiologia.jpeg" alt="Servicio de kinesiologia">    
                 </div>
-
+                
                 <div class="services__container__service__information">
                     <h3>KINESIOLOGÍA</h3>
                     <ul>
@@ -85,12 +81,12 @@
                     </ul>
                 </div>
                 <div class="services__container__service__img">
-                    <img src="./assets/fisioterapia.jpeg" alt="Servicio de fisioterapia">
+                    <img src="./assets/fisioterapia.jpeg" alt="Servicio de fisioterapia">    
                 </div>
             </div>
             <div class="services__container__service animacion">
                 <div class="services__container__service__img">
-                    <img src="./assets/rehabilitacion.jpg" alt="Servicio de fisioterapia">
+                    <img src="./assets/rehabilitacion.jpeg" alt="Servicio de rehabilitación">    
                 </div>
                 <div class="services__container__service__information">
                     <h3>REHABILITACIÓN NEUROKINÉSICA</h3>
@@ -104,9 +100,10 @@
                         <li>- Esclerosis Múltiple.</li>
                     </ul>
                 </div>
+               
             </div>
             <div class="services__container__service animacion">
-                <div class="services__container__service__information">
+            <div class="services__container__service__information">
                     <h3>TERAPIAS NO CONVENCIONALES</h3>
                     <ul>
                         <li>- Acupuntura.</li>
@@ -121,7 +118,7 @@
             </div>
             <div class="services__container__service animacion">
                 <div class="services__container__service__img">
-                    <img src="./assets/psicomotricidad.jpeg" alt="Servicio de fisioterapia">
+                    <img src="./assets/psicomotricidad.jpeg" alt="Servicio de Psicomotricidad">
                 </div>
                 <div class="services__container__service__information">
                     <h3>PSICOMOTRICIDAD</h3>
@@ -136,18 +133,16 @@
         </div>
     </section>
 
-    <!-- <div data-aos="zoom-in" id='aboutUs' data-aos-duration="2000" >
-        <div class="banner">
-            <p>En BIENESTAR <span class="salud">SALUD</span> contamos con equipamiento de última generación y
-                profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia en pos
-                de garantizarle al paciente una pronta recuperación en un marco de empatía, atención y respeto.-</p>
-        </div>
-    </div> -->
+<section data-aos="zoom-in" data-aos-duration="2000"  id="aboutUs">
+    <div class="banner">
+        <p>En BIENESTAR <span class="salud">SALUD</span> contamos con equipamiento de última generación y profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia en pos de garantizarle al paciente una pronta recuperación en un marco de empatía, atención y respeto.-</p>
+    </div>
+</section>
 
 
     <!-- carrousel -->
 
-    <section id="aboutUs" class="aboutUs">
+    <section id="aboutUs">
         <div class="carrousel__titles__container">
             <h2 data-aos="fade-right" data-aos-duration="2000" class="titulo_carrousel">Somos Bienestar <span
                     class="salud">
@@ -156,97 +151,68 @@
                 distinguido en Fisioterapia
                 y Kinesiología.</h3>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="2000" >
-            <div class="banner">
-                <!-- <p>En BIENESTAR <span class="salud">SALUD</span>  -->
-                    Contamos con equipamiento de última generación y
-                    profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia en pos
-                    de garantizarle al paciente una pronta recuperación en un marco de empatía, atención y respeto.-</p>
-            </div>
-        </div>
+
 
         <div class="container_carrousel ">
             <div class="row col-12 container_carrousel_row">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="35000">
+                        <div class="carousel-item active" data-bs-interval="50000">
                             <div class="w-100">
-
+                                
                                 <div class="row align-items-center justify-content-center carousel-item-container">
 
                                     <div class="col-md-10 order-md-0">
-                                        <figure class="mx-auto mb-0">
+                                        <figure class="mx-auto mb-0" >
                                             <h4 class="carrousel-item_titulo">KINESIOLOGÍA TRAUMATOLÓGICA</h4>
-                                            <p class="carrousel_texto "> Kinesiología respiratoria, pediátrica y
-                                                neonatal.
-                                                Contamos con materiales para el control de los parámetros vitales pre y
-                                                post sesión de
-                                                KTR, sistema de aspiración abierta para patologías más complejas,
-                                                gabinetes
-                                                individuales, aparatología de última generación y un gimnasio con
-                                                variedad de elementos.
-
-                                                <!-- Las maniobras kinésicas convencionales se complementan con la
-                                                posibilidad de tapping,
-                                                liberación miofacial, esferodinamia, punción seca, acupuntura. -->
-
+                                            <p class="carrousel_texto "> Kinesiología respiratoria, pediátrica y neonatal.
+                                                Contamos con materiales para el control de los parámetros vitales pre y post sesión de
+                                                KTR, sistema de aspiración abierta para patologías más complejas, gabinetes
+                                                individuales, aparatología de última generación y un gimnasio con variedad de elementos.
+                                                Las maniobras kinésicas convencionales se complementan con la posibilidad de tapping,
+                                                liberación miofacial, esferodinamia, punción seca, acupuntura.
                                             </p>
-
+                                           
 
                                         </figure>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="35000">
+                        <div class="carousel-item" data-bs-interval="2000">
                             <div class="w-100">
                                 <div class="row align-items-center justify-content-center carousel-item-container">
-
+                                    
                                     <div class="col-md-10 order-md-0">
-                                        <figure class="mx-auto mb-0">
-                                            <h4 class="carrousel-item_titulo">REHABILITACIÓN PERSONALIZADA</h4>
-                                            <p class="carrousel_texto ">...Nuestro establecimiento tiene la capacidad de
-                                                recepcionar pacientes
-                                                con enfermedades neurológicas centrales y periféricas (ACV, PARKINSON,
-                                                ALZEHIMER, PFP,
-                                                ELA, ESQUELOROSIS MÚLTIPLE, LESIONES MEDULARES,SINDRÓMES VESTIBUALES
-                                                ETC). 
-                                                <!-- Se brinda una
-                                                atención personalizada de 45 minutos, con trabajo cuerpo a cuerpo,
-                                                kinesiólogo –
-                                                paciente. Las instalaciones brindan la posibilidad de recepcionar
-                                                pacientes en camilla
-                                                y/o silla de ruedas. -->
-                                            </p>
-
+                                        <figure class="mx-auto mb-0" >
+                                      <h4 class="carrousel-item_titulo">REHABILITACIÓN PERSONALIZADA</h4>
+                                                <p class="carrousel_texto ">...Nuestro establecimiento tiene la capacidad de recepcionar pacientes
+                                                    con enfermedades neurológicas centrales y periféricas (ACV, PARKINSON, ALZEHIMER, PFP,
+                                                    ELA, ESQUELOROSIS MÚLTIPLE, LESIONES MEDULARES,SINDRÓMES VESTIBUALES ETC). Se brinda una
+                                                    atención personalizada de 45 minutos, con trabajo cuerpo a cuerpo, kinesiólogo –
+                                                    paciente. Las instalaciones brindan la posibilidad de recepcionar pacientes en camilla
+                                                    y/o silla de ruedas.</p>
+                                            
                                         </figure>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="35000">
+                        <div class="carousel-item">
                             <div class="w-100">
                                 <div class="row align-items-center justify-content-center carousel-item-container">
-
+                                    
                                     <div class="col-md-10 order-md-0">
-                                        <figure class="mx-auto mb-0">
-                                            <h4 class="carrousel-item_titulo">REHABILITACIÓN NEUROKINÉSICA</h4>
-                                            <p class="carrousel_texto">El trabajo neurokinésico se realiza sobre la base
-                                                de CONCEPTO BOBATH,
-                                                contamos con los aditamentos necesarios para beneficiar la progresión
-                                                ascendente del
-                                                paciente. 
-                                                <!-- Cada una de las terapias según el requerimiento de la
-                                                patología del paciente,
-                                                quedan registradas en una ficha evaluativa donde se plasman los
-                                                parámetros iniciales del
-                                                paciente. Finalizadas las sesiones indicadas por el médico tratante se
-                                                realiza una
-                                                reevaluación para dejar constancia de la evolución del paciente en el
-                                                proceso de su
-                                                tratamiento. -->
-                                            </p>
-
+                                        <figure class="mx-auto mb-0" >
+                                           <h4 class="carrousel-item_titulo">REHABILITACIÓN NEUROKINÉSICA</h4>
+                                                <p class="carrousel_texto">El trabajo neurokinésico se realiza sobre la base de CONCEPTO BOBATH,
+                                contamos con los aditamentos necesarios para beneficiar la progresión ascendente del
+                                paciente. Cada una de las terapias según el requerimiento de la patología del paciente,
+                                quedan registradas en una ficha evaluativa donde se plasman los parámetros iniciales del
+                                paciente. Finalizadas las sesiones indicadas por el médico tratante se realiza una
+                                reevaluación para dejar constancia de la evolución del paciente en el proceso de su
+                                tratamiento.</p>
+                                            
                                         </figure>
                                     </div>
                                 </div>
@@ -268,57 +234,7 @@
         </div>
     </section>
 
-    <!-- <section>
-        <h3 class="container_cards_titulo2">CONOCÉNOS</h3>
-        <div class="container_cards2">
-            <div class=" row row-cols-1 row-cols-md-3 g-4 container_cards_card">
-                <div class="col">
-                    <div data-aos="flip-left" data-aos-duration="2000" class="card2 h-100">
-                        <img src="./assets/card1.jpeg" class="card-img-top" alt="imagen Bienestar salud">
-                        <div class="card-body">
-                            <h5 class="card-title2">KINESIOLOGÍA TRAUMATOLÓGICA </h5>
-                            <p class="card-text2">
-                                Kinesiología respiratoria, pediátrica y neonatal.
-                                Contamos con materiales para el control de los parámetros vitales pre y post sesión de
-                                KTR, sistema de aspiración abierta para patologías más complejas, gabinetes
-                                individuales, aparatología de última generación y un gimnasio con variedad de elementos.
-                                Las maniobras kinésicas convencionales se complementan con la posibilidad de tapping,
-                                liberación miofacial, esferodinamia, punción seca, acupuntura.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div data-aos="zoom-in" data-aos-duration="2000" class="card2 h-100">
-                        <img src="./assets/card2.jpeg" class="card-img-top" alt="......ponemos imagen???">
-                        <div class="card-body">
-                            <h5 class="card-title2">REHABILITACIÓN PERSONALIZADA </h5>
-                            <p class="card-text2">Nuestro establecimiento tiene la capacidad de recepcionar pacientes
-                                con enfermedades neurológicas centrales y periféricas (ACV, PARKINSON, ALZEHIMER, PFP,
-                                ELA, ESQUELOROSIS MÚLTIPLE, LESIONES MEDULARES,SINDRÓMES VESTIBUALES ETC). Se brinda una
-                                atención personalizada de 45 minutos, con trabajo cuerpo a cuerpo, kinesiólogo –
-                                paciente. Las instalaciones brindan la posibilidad de recepcionar pacientes en camilla
-                                y/o silla de ruedas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div data-aos="flip-right" data-aos-duration="2000" class="card2 h-100">
-                        <img src="./assets/card3.jpeg" class="card-img-top" alt=".....ponemos imagen????">
-                        <div class="card-body">
-                            <h5 class="card-title2">REHABILITACIÓN NEUROKINÉSICA</h5>
-                            <p class="card-text2">El trabajo neurokinésico se realiza sobre la base de CONCEPTO BOBATH,
-                                contamos con los aditamentos necesarios para beneficiar la progresión ascendente del
-                                paciente. Cada una de las terapias según el requerimiento de la patología del paciente,
-                                quedan registradas en una ficha evaluativa donde se plasman los parámetros iniciales del
-                                paciente. Finalizadas las sesiones indicadas por el médico tratante se realiza una
-                                reevaluación para dejar constancia de la evolución del paciente en el proceso de su
-                                tratamiento.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+   
 
     <section id="contact" class="contact">
         <div class="contact__container">
