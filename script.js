@@ -3,13 +3,16 @@ const mainSection = document.querySelector('#main');
 const aboutUsSection = document.querySelector('#aboutUs');
 const contactSection = document.querySelector('#contact')
 
+const navLogo = document.querySelector('#navLogo');
 const navLinks = document.querySelector('.nav__categorias');
+const navHome = document.querySelector('#navHome');
 const navServices = document.querySelector('#navServices');
 const navAboutUs = document.querySelector('#navAboutUs');
 const navContact = document.querySelector('#navContact');
 
 const responsiveBtnNav = document.querySelector('.nav__responsiveButton');
 
+// animacion class efect
 const animado=document.querySelectorAll(".animacion");
 window.addEventListener('scroll',function(){
     let scrollTopPos = document.documentElement.scrollTop;
@@ -22,6 +25,16 @@ window.addEventListener('scroll',function(){
             : animado[i].classList.add("mostrarIzquierda")
         }
     }
+});
+navLogo.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if (navLinks.classList.contains('showNav')) navLinks.classList.toggle('showNav');
+    scrollTo(0,mainSection.offsetTop );
+});
+navHome.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if (navLinks.classList.contains('showNav')) navLinks.classList.toggle('showNav');
+    scrollTo(0,mainSection.offsetTop );
 });
 
 navServices.addEventListener('click',(e)=>{

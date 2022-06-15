@@ -21,6 +21,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+    content=" En Bienestar Salud ofrecemos un servicio distinguido en Fisioterapia y Kinesiología, contamos con equipamiento de última generación y profesionales altamente capacitados, con el único propósito de brindar una atención de excelencia.">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
     <title>Bienestar Salud</title>
 </head>
@@ -28,10 +31,11 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="nav__logo" href="#">
-                <img src="./assets/logo.png" alt="Bienestar Salud logo"> Bienestar <span>Salud</span>
+            <a class="nav__logo" id="navLogo" href="#">
+                <img src="./assets/logo.png"  alt="Bienestar Salud logo"> Bienestar <span>Salud</span>
             </a>
             <ul class="nav__categorias">
+                <li><a href="#main" id="navHome">Inicio</a></li>
                 <li><a href="#services" id="navServices">Servicios</a></li>
                 <li><a href="#aboutUs" id="navAboutUs">Nosotros</a></li>
                 <li><a href="#contact" id="navContact">Contacto</a></li>
@@ -40,13 +44,13 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
         <div class="main__information">
 
             <h2>KINESIOLOGÍA</h2>
             <h2>FISIOTERAPIA</h2>
             <h1>BIENESTAR <span>SALUD</span></h1>
-            <p>SAN MIGUEL DE TUCUMÁN</p>
+            <p class="main__information__location">SAN MIGUEL DE TUCUMÁN</p>
         </div>
     </main>
     
